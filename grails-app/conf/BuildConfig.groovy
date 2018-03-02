@@ -11,6 +11,7 @@ grails.project.dependency.resolution = {
 		grailsCentral()
 		mavenCentral()
 		mavenRepo 'https://repo.transmartfoundation.org/content/repositories/public/'
+		mavenRepo 'http://52north.org/maven/repo/releases' // to resolve the excluded gnujaxp dependency
 	}
 
 	dependencies {
