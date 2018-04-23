@@ -36,7 +36,7 @@ public class IgvFiles {
 	protected File tmpDir;
 	protected String fileAccessUrl;
 	protected File sampleFile;
-	protected List<File> files = new ArrayList<File>();
+	protected List<File> files = new ArrayList<>();
 	protected File sessionFile;
 
 	public IgvFiles(String gpFileDirName, String gpFileAccessUrl) {
@@ -95,7 +95,7 @@ public class IgvFiles {
 		return files;
 	}
 
-	List<File> getDataFileList() {
+	public List<File> getDataFileList() {
 		return files;
 	}
 }

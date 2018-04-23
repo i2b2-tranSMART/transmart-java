@@ -154,7 +154,7 @@ public class XmlHttpProxyServlet extends HttpServlet {
 	}
 
 	public void doProcess(HttpServletRequest request, HttpServletResponse response, boolean post) {
-		StringBuffer bodyContent = null;
+		StringBuilder bodyContent = null;
 		OutputStream out = null;
 		PrintWriter writer = null;
 		String serviceKey;
@@ -164,7 +164,7 @@ public class XmlHttpProxyServlet extends HttpServlet {
 			String line = null;
 			while ((line = in.readLine()) != null) {
 				if (bodyContent == null) {
-					bodyContent = new StringBuffer();
+					bodyContent = new StringBuilder();
 				}
 				bodyContent.append(line);
 			}

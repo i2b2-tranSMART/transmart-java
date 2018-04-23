@@ -63,24 +63,19 @@ public class RBMFilePivot {
 							antigenArray[colCount] = token;
 						}
 						else {
-
 							antigenArray[colCount] = token;
-							//	antCount++;
 						}
 						colCount++;
 					}
 
-					//System.out.println(subjectMap);
 					for (int i = 0; i < headerArray.length; i++) {
 						if (i > 0) {
 							writer.write("\t");
 						}
 						writer.write(headerArray[i]);
-
 					}
 					writer.newLine();
 				}
-
 				else {
 					int cCount = 0;
 					StringBuilder comColumns = new StringBuilder();
